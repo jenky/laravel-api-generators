@@ -2,25 +2,15 @@
 
 namespace Jenky\LaravelApiGenerators\Commands;
 
-use Illuminate\Console\GeneratorCommand;
+use Illuminate\Foundation\Console\ModelMakeCommand as BaseModelMakeCommand;
 use Symfony\Component\Console\Input\InputOption;
 
-class ModelMakeCommand extends GeneratorCommand
+class ModelMakeCommand extends BaseModelMakeCommand
 {
     /**
      * @{inheritdoc}
      */
-    protected $name = 'make:api:model';
-
-    /**
-     * @{inheritdoc}
-     */
-    protected $description = 'Create a new api model class';
-
-    /**
-     * @{inheritdoc}
-     */
-    protected $type = 'Model';
+    protected $name = 'make:model:fill';
 
     /**
      * @{inheritdoc}
@@ -39,9 +29,11 @@ class ModelMakeCommand extends GeneratorCommand
      */
     protected function getOptions()
     {
-        return [
-            ['soft-delete', null, InputOption::VALUE_NONE, 'Generate model class with soft delete.'],
-        ];
+        $parent = parent::getOptions();
+
+        $parent[] = ['soft-delete', 's', InputOption::VALUE_NONE, 'Generate model class with soft delete.'];
+
+        return $parent;
     }
 
 }
