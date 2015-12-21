@@ -8,24 +8,24 @@ use Symfony\Component\Console\Input\InputOption;
 class ModelMakeCommand extends BaseModelMakeCommand
 {
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected $name = 'make:model:fill';
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected function getStub()
     {
         if ($this->option('soft-delete')) {
-            return __DIR__ . '/../../stubs/model.soft_delete.stub';
+            return __DIR__.'/../../stubs/model.soft_delete.stub';
         }
 
-        return __DIR__ . '/../../stubs/model.stub';
+        return __DIR__.'/../../stubs/model.stub';
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected function getOptions()
     {
@@ -35,5 +35,4 @@ class ModelMakeCommand extends BaseModelMakeCommand
 
         return $parent;
     }
-
 }

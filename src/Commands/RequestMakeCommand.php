@@ -8,34 +8,34 @@ use Symfony\Component\Console\Input\InputOption;
 class RequestMakeCommand extends GeneratorCommand
 {
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected $name = 'make:api:request';
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected $description = 'Create a new api request class';
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected $type = 'Request';
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected function getStub()
     {
         if ($this->option('resource')) {
-            return __DIR__ . '/../../stubs/request.resource.stub';
+            return __DIR__.'/../../stubs/request.resource.stub';
         }
 
-        return __DIR__ . '/../../stubs/request.stub';
+        return __DIR__.'/../../stubs/request.stub';
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected function getDefaultNamespace($rootNamespace)
     {
@@ -43,7 +43,7 @@ class RequestMakeCommand extends GeneratorCommand
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected function getOptions()
     {
