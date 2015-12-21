@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 class GeneratorCommand extends Generator
 {
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected function getStub()
     {
@@ -30,7 +30,7 @@ class GeneratorCommand extends Generator
     }
 
     /**
-     * @{inheritdoc}
+     * {@inheritdoc}
      */
     protected function replaceNamespace(&$stub, $name)
     {
