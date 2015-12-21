@@ -24,7 +24,7 @@ class DummyClass extends ApiController
      */
     public function index(DummyResourceClass $DummyResourceName)
     {
-        return $this->listResources($user);
+        return $this->listResources($DummyResourceName);
     }
 
     /**
