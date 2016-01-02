@@ -11,14 +11,18 @@ class DummyClass extends Model
      * 
      * @var array
      */
-    protected $guarded = ['id', '_method', '_token'];
+    protected $guarded = [
+        'id', '_method', '_token',
+    ];
 
     /**
      * The attributes excluded from the model's JSON form.
      * 
      * @var array
      */
-    protected $hidden = ['created_at', 'updated_at'];
+    protected $hidden = [
+        'created_at', 'updated_at',
+    ];
 
     /**
      * Validation rules.
@@ -28,5 +32,4 @@ class DummyClass extends Model
     public static $rules = [
 
     ];
-
 }

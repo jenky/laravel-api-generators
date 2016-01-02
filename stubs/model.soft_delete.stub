@@ -14,21 +14,27 @@ class DummyClass extends Model
      * 
      * @var array
      */
-    protected $guarded = ['id', '_method', '_token'];
+    protected $guarded = [
+        'id', '_method', '_token',
+    ];
 
     /**
      * The attributes that should be mutated to dates.
      * 
      * @var array
      */
-    protected $dates = ['deleted_at'];
+    protected $dates = [
+        'deleted_at',
+    ];
 
     /**
      * The attributes excluded from the model's JSON form.
      * 
      * @var array
      */
-    protected $hidden = ['updated_at', 'deleted_at'];
+    protected $hidden = [
+        'updated_at', 'deleted_at',
+    ];
 
     /**
      * Validation rules.
@@ -38,5 +44,4 @@ class DummyClass extends Model
     public static $rules = [
 
     ];
-
 }
