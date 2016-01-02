@@ -59,7 +59,7 @@ class DummyClass extends ApiController
      */
     public function update(Request $request, DummyResourceClass $DummyResourceName, $id)
     {
-        return $this->updateResource($user, $id, $request->all());
+        return $this->updateResource($DummyResourceName, $id, $request->all());
     }
 
     /**
