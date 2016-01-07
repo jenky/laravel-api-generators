@@ -48,7 +48,7 @@ class ControllerMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['resource', null, InputOption::VALUE_OPTIONAL, 'Generate controller class with resource name.'],
+            ['resource', 'r', InputOption::VALUE_OPTIONAL, 'Generate controller class with resource name.'],
         ];
     }
 }
