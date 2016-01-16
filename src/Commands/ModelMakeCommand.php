@@ -10,15 +10,15 @@ class ModelMakeCommand extends BaseModelMakeCommand
     /**
      * {@inheritdoc}
      */
-    protected $name = 'make:model:fill';
+    protected $name = 'make:model:boilerplate';
 
     /**
      * {@inheritdoc}
      */
     protected function getStub()
     {
-        if ($this->option('soft-delete')) {
-            return __DIR__.'/../../stubs/model.soft_delete.stub';
+        if ($this->option('soft-deletes')) {
+            return __DIR__.'/../../stubs/model.soft_deletes.stub';
         }
 
         return __DIR__.'/../../stubs/model.stub';
@@ -31,7 +31,7 @@ class ModelMakeCommand extends BaseModelMakeCommand
     {
         $parent = parent::getOptions();
 
-        $parent[] = ['soft-delete', 's', InputOption::VALUE_NONE, 'Generate model class with soft delete.'];
+        $parent[] = ['soft-deletes', 's', InputOption::VALUE_NONE, 'Generate model class with soft deletes.'];
 
         return $parent;
     }
