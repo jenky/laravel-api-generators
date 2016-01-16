@@ -15,7 +15,7 @@ class RequestMakeCommand extends GeneratorCommand
     /**
      * {@inheritdoc}
      */
-    protected $description = 'Create a new api request class';
+    protected $description = 'Create a new API request class';
 
     /**
      * {@inheritdoc}
@@ -48,7 +48,7 @@ class RequestMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['resource', null, InputOption::VALUE_OPTIONAL, 'Generate request class with resource name.'],
+            ['resource', null, InputOption::VALUE_OPTIONAL, 'Generate request class with a resource name.'],
         ];
     }
 }

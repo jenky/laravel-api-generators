@@ -15,7 +15,7 @@ class ControllerMakeCommand extends GeneratorCommand
     /**
      * {@inheritdoc}
      */
-    protected $description = 'Create a new api controller class';
+    protected $description = 'Create a new API controller class';
 
     /**
      * {@inheritdoc}
@@ -48,7 +48,7 @@ class ControllerMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['resource', 'r', InputOption::VALUE_OPTIONAL, 'Generate controller class with resource name.'],
+            ['resource', 'r', InputOption::VALUE_OPTIONAL, 'Generate controller class with a resource name.'],
         ];
     }
 }
