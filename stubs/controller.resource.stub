@@ -3,11 +3,10 @@
 namespace DummyNamespace;
 
 use Illuminate\Http\Request;
-use DummyRootNamespaceHttp\Requests;
-use DummyRootNamespaceHttp\Controllers\ApiController;
+use DummyRootNamespaceHttp\Controllers\API\Controller;
 use DummyModelClass;
 
-class DummyClass extends ApiController
+class DummyClass extends Controller
 {
     /**
      * The resource name.

@@ -2,9 +2,9 @@
 
 namespace DummyNamespace;
 
-use DummyRootNamespaceHttp\Requests\ApiRequest;
+use DummyRootNamespaceHttp\Requests\API\Request;
 
-class DummyClass extends ApiRequest
+class DummyClass extends Request
 {
     /**
      * Determine if the user is authorized to make this request.

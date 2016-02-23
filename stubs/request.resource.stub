@@ -2,10 +2,10 @@
 
 namespace DummyNamespace;
 
-use DummyRootNamespaceHttp\Requests\ApiRequest;
+use DummyRootNamespaceHttp\Requests\API\Request;
 use DummyModelClass;
 
-class DummyClass extends ApiRequest
+class DummyClass extends Request
 {
     /**
      * The resource name.
