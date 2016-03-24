@@ -27,7 +27,7 @@ class ControllerMakeCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        if ($this->option('resource')) {
+        if ($this->option('model')) {
             return __DIR__.'/../../stubs/controller.resource.stub';
         }
 
@@ -48,7 +48,7 @@ class ControllerMakeCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['resource', 'r', InputOption::VALUE_OPTIONAL, 'Generate controller class with a resource name.'],
+            ['model', 'm', InputOption::VALUE_OPTIONAL, 'Generate controller class with a resource model name.'],
         ];
     }
 }
